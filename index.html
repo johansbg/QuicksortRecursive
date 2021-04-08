@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se importan los Stilos CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Ordenamiento QuickSort</title>
     
 </head>
 <body>
     <div id="padre" class="contenedor">
-        <h2 class="titulo">QuickSort Recursivo</h1>
-        <form name="FormularioOrdenamietno" action="" method="POST">
+        <!-- Esto es un titulo h2 -->
+        <h2 class="titulo">QuickSort Recursivo</h2>
+        <!-- Esto es formulario -->
+        <form name="formularioOrdenamiento" action="" method="POST">
+            <!-- La etiqueta label sirve para mostar un texto asociado a un input -->
             <label for="fname">Vector de Enteros:</label><br>
+            <!-- La etiqueta input sirve para recibir un texto -->
             <input class="textInput" type="text" id="array" name="array" placeholder="Digitar los enteros de este modo 1,2,3,4,5,6,7..."><br>
+            <!-- Se crea un submit el cual al oprimir el boton se realizara la funcion javascript-->
             <input class="submitInput" type="button" value="Ordenar" onclick="startQuicksort()">
         </form>
         <div id="js"></div>
     </div>
 
-    <!-- Scripts JS -->
+    <!-- Se importan los Scripts JS -->
     <script src="assets/js/QuickSortRecusivo.js"></script>
 
 </body>

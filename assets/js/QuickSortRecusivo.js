@@ -15,24 +15,26 @@ function quicksort(array) {
  
     //Insert HTML
 
-    var newDiv = document.createElement("div");
-    var newP = document.createElement("p");
-    newP.className="resultados"
+    var newDiv = document.createElement("div");// div creado.
+    var newP = document.createElement("p");//p creado.
+    newP.className="resultados"//añade className al p creado.
     newDiv.appendChild(newP);
-    var newContent = document.createTextNode("Vector: "+JSON.stringify(array));
-    newP.appendChild(newContent); //añade texto al div creado.
+    var newContent = document.createTextNode("Vector: "+JSON.stringify(array));//añade texto al p creado.
+    //Se repite el proceso en forma de mostrar los resultados
+    newP.appendChild(newContent); 
     var newP = document.createElement("p");
     newP.className="resultados"
     newDiv.appendChild(newP);
     var newContent = document.createTextNode("Pivote: "+pivot);
-    newP.appendChild(newContent); //añade texto al div creado.
+    newP.appendChild(newContent); 
     var newP = document.createElement("p");
     newP.className="resultados"
     newDiv.appendChild(newP);
     var newContent = document.createTextNode("Vector de la Izquierda: "+JSON.stringify(left)+"   |    Vector de la derecha: "+JSON.stringify(right));
-    newP.appendChild(newContent); //añade texto al div creado.
+    newP.appendChild(newContent); 
     var currentDiv = document.getElementById("js");
     var parentDiv = document.getElementById("padre");
+    //Se inserta todo el bloque creado encima de la etiqueta div con ID = js
     parentDiv.insertBefore(newDiv, currentDiv);
 
 
@@ -56,14 +58,15 @@ function quicksort(array) {
 
 function startQuicksort(){
     //Titulo de la busqueda
-    var newDiv = document.createElement("div");
+    var newDiv = document.createElement("div");//añade div .
     newDiv.className = "tituloBusqueda"
-    var newContent = document.createTextNode("ORDENAMIENTO NUMERO "+numeroDeOrdenamiento);
-    newDiv.appendChild(newContent); //añade texto al div creado.
+    var newContent = document.createTextNode("ORDENAMIENTO NUMERO "+numeroDeOrdenamiento);//añade texto al div creado.
+    newDiv.appendChild(newContent); 
     
     // añade el elemento creado y su contenido al DOM
     var currentDiv = document.getElementById("js");
     var parentDiv = document.getElementById("padre");
+    //Se inserta todo el bloque creado encima de la etiqueta div con ID = js
     parentDiv.insertBefore(newDiv, currentDiv);
 
 
@@ -78,12 +81,12 @@ function startQuicksort(){
     newP.className="resultadosFinales"
     newDiv.appendChild(newP);
     var newContent = document.createTextNode("Vector Ordenado:");
-    newP.appendChild(newContent); //añade texto al div creado.
+    newP.appendChild(newContent); 
     var newP = document.createElement("p");
     newP.className="resultadosFinales"
     newDiv.appendChild(newP);
     var newContent = document.createTextNode("["+resultado+"]");
-    newP.appendChild(newContent); //añade texto al div creado.
+    newP.appendChild(newContent);
     
     // añade el elemento creado y su contenido al DOM
     var currentDiv = document.getElementById("js");
