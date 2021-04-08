@@ -1,6 +1,7 @@
 var numeroDeOrdenamiento = 1;
 
 function quicksort(array) {
+
     var randomPlace = Math.floor(Math.random() * array.length),
         pivot = array[randomPlace],
         left = [],
@@ -11,6 +12,8 @@ function quicksort(array) {
         (array[i] < pivot ? left : right).push(array[i]);
     }
     console.log(pivot, JSON.stringify(array), JSON.stringify(left), JSON.stringify(right));
+ 
+    //Insert HTML
 
     var newDiv = document.createElement("div");
     var newP = document.createElement("p");
@@ -32,6 +35,7 @@ function quicksort(array) {
     var parentDiv = document.getElementById("padre");
     parentDiv.insertBefore(newDiv, currentDiv);
 
+
     // prevent looping forever
     if (!left.length && right.every(function (v) { return v === pivot; })) {
         return right;
@@ -46,6 +50,7 @@ function quicksort(array) {
     if (right.length <= 1) {
         return quicksort(left).concat(right);
     }
+    
     return quicksort(left).concat(quicksort(right));
 }
 
