@@ -15,26 +15,26 @@
 
 .titulo{
     color: #3E76DE;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .contenedor > form {
-    font-size: 18px;
+    font-size: 38px;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .contenedor > form label {
     color: #3E76DE;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .contenedor > form .textInput {
     margin: 20px;
     width: 80%;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     border-color: #3E76DE;
     border-radius: 10px;
@@ -47,24 +47,28 @@
     border: 0;
     margin: 20px;
     width: 30%;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .tituloBusqueda{
     color: #3E76DE;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .resultados{
     text-align: center;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 .resultadosFinales{
     text-align: center;
     margin-bottom: 15px;
+    font-size: 25px;
     color: #3E76DE;
 }
